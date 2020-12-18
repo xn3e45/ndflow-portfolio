@@ -1,0 +1,174 @@
+body {
+  height: 100vh;
+  font-family: 'Montserrat';
+  background-color: #151618;
+}
+
+h1 {
+  font-size: 24px;
+  color: #A9ABB3;
+}
+
+a {
+  text-decoration: none;
+}
+
+p {
+  color: #A9ABB3;
+  margin-top: 0;
+}
+
+hr {
+  width: 50%;
+  color: gray;
+}
+
+i {
+  font-size: 50px;
+  color: #A9ABB3;
+}
+
+.profile-container {
+  text-align: center;
+}
+
+.profile-pic {
+  border-radius: 10px;
+  width: 150px;
+}
+
+.profile-icons {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.icons {
+  background-color: #25282C;
+  width: 100px;
+  height: 67px;
+  border-radius: 10px;
+  margin: 10px;
+  padding: 10px;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: minmax(100px, auto);
+  margin: 100px;
+  column-gap: 32px;
+  row-gap: 32px;
+  justify-content: center;
+}
+
+.card {
+  background-color: #25282C;
+  justify-content: center;
+  padding: 20px;
+  border-radius: 20px;
+  text-align: center;
+}
+
+.card-img {
+  width: 275px;
+  border-radius: 20px;
+  margin-top: 20px;
+}
+
+.card-icons {
+  display: flex;
+  justify-content: space-between;
+  margin: 20px 20px 5px 20px;
+}
+
+.c-icon {
+  font-size: 30px;
+  color: #41474E;
+}
+
+.demo {
+  background-color: #0090d7;
+  padding: 10px;
+  border-radius: 10px;
+}
+
+.demo-txt {
+  margin: 0;
+  font-weight: 700;
+  color: white;
+}
+
+.team {
+  height: 475px;
+}
+
+.single-price {
+  height: 540px;
+}
+
+.about-me {
+  margin: auto;
+  text-align: center;
+  width: 700px;
+}
+
+.about-txt {
+  font-size: 1rem;
+}
+
+.csstricks {
+  text-decoration: underline;
+}
+
+@media only screen and (max-width: 375px) {
+  i {
+    font-size: 25px;
+  }
+  .icons {
+    background-color: #25282C;
+    width: 64px;
+    height: 45px;
+    border-radius: 10px;
+    margin: 10px;
+    padding: 10px;
+  }
+  .container {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: minmax(50px, auto);
+    margin: 100px;
+    column-gap: 0;
+    row-gap: 25px;
+    justify-content: center;
+  }
+  .demo {
+    background-color: #0090d7;
+    padding: 10px;
+    border-radius: 10px;
+  }
+
+  .demo-txt {
+    margin: 0;
+    font-weight: 700;
+    color: white;
+  }
+
+  .team {
+    height: auto;
+  }
+
+  .single-price {
+    height: auto;
+  }
+
+  .about-me {
+    margin: auto;
+    text-align: center;
+    width: auto;
+  }
+
+  .about-txt {
+    font-size: 12px;
+  }
+}
