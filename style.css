@@ -367,7 +367,7 @@ i {
     grid-template-rows: minmax(50px, auto);
     margin: 100px;
     column-gap: 50px;
-    row-gap: 25px;
+    row-gap: 50px;
     justify-content: center;
   }
 
@@ -422,7 +422,7 @@ i {
     grid-template-rows: minmax(50px, auto);
     margin: 100px;
     column-gap: 50px;
-    row-gap: 25px;
+    row-gap: 50px;
     justify-content: center;
   }
 
