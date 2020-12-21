@@ -1,0 +1,542 @@
+body {
+  height: 100vh;
+  font-family: 'Montserrat';
+  background-color: #151618;
+}
+
+h1 {
+  font-size: 24px;
+  color: #A9ABB3;
+}
+
+a {
+  text-decoration: none;
+}
+
+p {
+  color: #A9ABB3;
+  margin-top: 0;
+}
+
+hr {
+  width: 50%;
+  color: gray;
+}
+
+i {
+  font-size: 50px;
+  color: #A9ABB3;
+}
+
+.profile-container {
+  text-align: center;
+}
+
+.profile-pic {
+  border-radius: 10px;
+  width: 150px;
+}
+
+.profile-icons {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.icons {
+  background-color: #25282C;
+  width: 100px;
+  height: 67px;
+  border-radius: 10px;
+  margin: 10px;
+  padding: 10px;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: minmax(100px, auto);
+  margin: 50px;
+  column-gap: 50px;
+  row-gap: 50px;
+  justify-content: center;
+}
+
+.card {
+  background-color: #25282C;
+  justify-content: center;
+  padding: 20px;
+  border-radius: 20px;
+  text-align: center;
+}
+
+.card-img {
+  width: 275px;
+  border-radius: 20px;
+  margin-top: 20px;
+}
+
+.card-icons {
+  display: flex;
+  justify-content: space-between;
+  margin: 20px 20px 5px 20px;
+}
+
+.c-icon {
+  font-size: 30px;
+  color: #41474E;
+}
+
+.demo {
+  background-color: #0090d7;
+  padding: 10px;
+  border-radius: 10px;
+}
+
+.demo-txt {
+  margin: 0;
+  font-weight: 700;
+  color: white;
+}
+
+.team {
+  height: 475px;
+}
+
+.not-found-page {
+  height: 475px;
+}
+
+.single-price {
+  height: 540px;
+}
+
+.gallery {
+  height: 550px;
+}
+
+.landing-page {
+  height: 475px;
+}
+
+.about-me {
+  margin: auto;
+  text-align: center;
+  width: 700px;
+}
+
+.about-txt {
+  font-size: 1rem;
+}
+
+.csstricks {
+  text-decoration: underline;
+}
+
+/* ----------- iPhone 4 and 4S ----------- */
+@media only screen and (min-device-width: 320px) and (max-device-width: 480px) and (-webkit-min-device-pixel-ratio: 2) {
+  i {
+    font-size: 25px;
+  }
+
+  .icons {
+    background-color: #25282C;
+    width: 64px;
+    height: 45px;
+    border-radius: 10px;
+    margin: 10px;
+    padding: 10px;
+  }
+
+  .container {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: minmax(50px, auto);
+    margin: 100px;
+    column-gap: 0;
+    row-gap: 25px;
+    justify-content: center;
+  }
+
+  .demo {
+    background-color: #0090d7;
+    padding: 10px;
+    border-radius: 10px;
+  }
+
+  .demo-txt {
+    margin: 0;
+    font-weight: 700;
+    color: white;
+  }
+
+  .team {
+    height: auto;
+  }
+
+  .single-price {
+    height: auto;
+  }
+
+  .about-me {
+    margin: auto;
+    text-align: center;
+    width: auto;
+  }
+
+  .about-txt {
+    font-size: 12px;
+  }
+}
+
+/* ----------- iPhone 5, 5S, 5C and 5SE ----------- */
+@media only screen and (min-device-width: 320px) and (max-device-width: 568px) and (-webkit-min-device-pixel-ratio: 2) {
+  i {
+    font-size: 25px;
+  }
+
+  .icons {
+    background-color: #25282C;
+    width: 64px;
+    height: 45px;
+    border-radius: 10px;
+    margin: 10px;
+    padding: 10px;
+  }
+
+  .container {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: minmax(50px, auto);
+    margin: 100px;
+    column-gap: 0;
+    row-gap: 25px;
+    justify-content: center;
+  }
+
+  .demo {
+    background-color: #0090d7;
+    padding: 10px;
+    border-radius: 10px;
+  }
+
+  .demo-txt {
+    margin: 0;
+    font-weight: 700;
+    color: white;
+  }
+
+  .team {
+    height: auto;
+  }
+
+  .single-price {
+    height: auto;
+  }
+
+  .about-me {
+    margin: auto;
+    text-align: center;
+    width: auto;
+  }
+
+  .about-txt {
+    font-size: 12px;
+  }
+}
+
+/* ----------- iPhone 6, 6S, 7 and 8 ----------- */
+@media only screen and (min-device-width: 375px) and (max-device-width: 667px) and (-webkit-min-device-pixel-ratio: 2) {
+  i {
+    font-size: 25px;
+  }
+
+  .icons {
+    background-color: #25282C;
+    width: 64px;
+    height: 45px;
+    border-radius: 10px;
+    margin: 10px;
+    padding: 10px;
+  }
+
+  .container {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: minmax(50px, auto);
+    margin: 100px;
+    column-gap: 0;
+    row-gap: 25px;
+    justify-content: center;
+  }
+
+  .demo {
+    background-color: #0090d7;
+    padding: 10px;
+    border-radius: 10px;
+  }
+
+  .demo-txt {
+    margin: 0;
+    font-weight: 700;
+    color: white;
+  }
+
+  .team {
+    height: auto;
+  }
+
+  .single-price {
+    height: auto;
+  }
+
+  .about-me {
+    margin: auto;
+    text-align: center;
+    width: auto;
+  }
+
+  .about-txt {
+    font-size: 12px;
+  }
+}
+
+/* ----------- iPhone 6+, 7+ and 8+ ----------- */
+@media only screen and (min-device-width: 414px) and (max-device-width: 736px) and (-webkit-min-device-pixel-ratio: 3) {
+  i {
+    font-size: 25px;
+  }
+
+  .icons {
+    background-color: #25282C;
+    width: 64px;
+    height: 45px;
+    border-radius: 10px;
+    margin: 10px;
+    padding: 10px;
+  }
+
+  .container {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: minmax(50px, auto);
+    margin: 100px;
+    column-gap: 0;
+    row-gap: 25px;
+    justify-content: center;
+  }
+
+  .demo {
+    background-color: #0090d7;
+    padding: 10px;
+    border-radius: 10px;
+  }
+
+  .demo-txt {
+    margin: 0;
+    font-weight: 700;
+    color: white;
+  }
+
+  .team {
+    height: auto;
+  }
+
+  .single-price {
+    height: auto;
+  }
+
+  .about-me {
+    margin: auto;
+    text-align: center;
+    width: auto;
+  }
+
+  .about-txt {
+    font-size: 12px;
+  }
+}
+
+/* Iphone X */
+@media only screen and (min-device-width: 375px) and (min-device-height: 812px) and (-webkit-device-pixel-ratio: 3) and (orientation: portrait) {
+
+  i {
+    font-size: 50px;
+  }
+
+  hr {
+    width: 100%;
+  }
+
+  .icons {
+    background-color: #25282C;
+    width: 84px;
+    height: 65px;
+    border-radius: 10px;
+    margin: 10px;
+    padding: 10px;
+  }
+
+  .container {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: minmax(50px, auto);
+    margin: 100px;
+    column-gap: 0;
+    row-gap: 50px;
+    justify-content: center;
+  }
+
+  .demo {
+    background-color: #0090d7;
+    padding: 10px;
+    border-radius: 10px;
+  }
+
+  .demo-txt {
+    margin: 0;
+    font-weight: 700;
+    color: white;
+  }
+
+  .team {
+    height: auto;
+  }
+
+  .single-price {
+    height: auto;
+  }
+
+  .about-me {
+    margin: auto;
+    text-align: center;
+    width: auto;
+  }
+
+  .about-txt {
+    font-size: 1.25rem;
+  }
+}
+
+/* iPhone XR */
+@media only screen and (min-device-width: 414px) and (min-device-height: 896px) and (-webkit-device-pixel-ratio: 2) and (orientation: portrait) {
+  i {
+    font-size: 50px;
+  }
+
+  hr {
+    width: 75%;
+  }
+
+  .icons {
+    background-color: #25282C;
+    width: 84px;
+    height: 65px;
+    border-radius: 10px;
+    margin: 10px;
+    padding: 10px;
+  }
+
+  .container {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: minmax(50px, auto);
+    margin: 100px;
+    column-gap: 50px;
+    row-gap: 50px;
+    justify-content: center;
+  }
+
+  .demo {
+    background-color: #0090d7;
+    padding: 10px;
+    border-radius: 10px;
+  }
+
+  .demo-txt {
+    margin: 0;
+    font-weight: 700;
+    color: white;
+  }
+
+  .team {
+    height: auto;
+  }
+
+  .single-price {
+    height: auto;
+  }
+
+  .about-me {
+    margin: auto;
+    text-align: center;
+    width: auto;
+  }
+
+  .about-txt {
+    font-size: 1.25rem;
+  }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1024px) and (-webkit-min-device-pixel-ratio: 1) {
+  i {
+    font-size: 50px;
+  }
+
+  hr {
+    width: 75%;
+  }
+
+  .icons {
+    background-color: #25282C;
+    width: 84px;
+    height: 65px;
+    border-radius: 10px;
+    margin: 10px;
+    padding: 10px;
+  }
+
+  .container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: minmax(50px, auto);
+    margin: 100px;
+    column-gap: 50px;
+    row-gap: 50px;
+    justify-content: center;
+  }
+
+  .demo {
+    background-color: #0090d7;
+    padding: 10px;
+    border-radius: 10px;
+  }
+
+  .demo-txt {
+    margin: 0;
+    font-weight: 700;
+    color: white;
+  }
+
+  .team {
+    height: 500px;
+  }
+
+  .single-price {
+    height: auto;
+  }
+
+  .landing-page {
+    height: 500px
+  }
+
+  .about-me {
+    margin: auto;
+    text-align: center;
+    width: 700px;
+  }
+
+  .about-txt {
+    font-size: 1.25rem;
+  }
+}
