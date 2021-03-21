@@ -1,642 +1,630 @@
 body {
-  height: 100vh;
-  font-family: 'Montserrat';
-  background-color: #151618;
+    height: 100vh;
+    background-color: #151618;
+    font-family: 'Roboto', sans-serif;
+    margin: 25px 50px;
+    color: white;
 }
 
 h1 {
-  font-size: 24px;
-  color: #A9ABB3;
+    font-weight: 300;
 }
 
-a {
-  text-decoration: none;
+span {
+   color: #4392f1; 
 }
 
-p {
-  color: #A9ABB3;
-  margin-top: 0;
-}
-
-hr {
-  width: 50%;
-  color: gray;
+footer {
+    height: 50px;
+    text-align: center;
 }
 
 i {
-  font-size: 50px;
-  color: #A9ABB3;
+    margin-top: 7.5px;
 }
 
-.profile-container {
-  text-align: center;
+a {
+    color: white;
 }
 
-.profile-pic {
-  border-radius: 10px;
-  width: 150px;
+#About-me, #Work, #Contact {
+   margin: 125px 230px;
+   padding: 75px 0; 
 }
 
-.profile-icons {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
+#Experience {
+    margin: 125px 150px 125px 230px; 
+    padding: 75px 0; 
 }
 
-.icons {
-  background-color: #25282C;
-  width: 100px;
-  height: 67px;
-  border-radius: 10px;
-  margin: 10px;
-  padding: 10px;
+
+/* Header Navbar section */
+
+.links{
+    text-decoration: none;
+    font-size: 1.5em;
+    color: white;
+    margin-right: 3rem;
 }
 
-.container {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: minmax(100px, auto);
-  margin: 50px;
-  column-gap: 50px;
-  row-gap: 50px;
-  justify-content: center;
+.links:hover {
+    border-bottom: 4px solid #4392f1;
+}
+
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo {
+    width: 250px;
+}
+
+.btn {
+    margin-right: 0;
+    padding: 0.875em;
+    border: 3px solid #4392f1;
+    border-radius: 12px;
+    background-color: transparent;
+    color: #4392f1;
+    font-size: 1em;
+    outline: none;
+}
+
+
+.btn:hover{
+    background-color: #4392f1;
+    color: white;
+}
+
+/* Heading content */
+
+.heading-quote {
+    display: flex;
+    text-transform: uppercase;
+    align-items: center;
+    font-size: 3.5em;
+    margin: 150px auto 150px auto;
+    width: 65rem;
+}
+
+.line-height {
+    margin: 0 20px 0 20px;
+    width: 5px;
+    height: 75px;
+    background-color: #4392f1;
+}
+
+.heading-info {
+    display: flex;
+    width: 60rem;
+    margin: auto;
+    align-items: center;
+}
+
+.info-h {
+    margin-right: 200px;
+}
+
+.heading-info h2 {
+    font-size: 50px;
+    margin: 0;
+}
+
+.heading-info p {
+    font-size: 1.65rem;
+    margin: 65px 0 0 0;
+    width: 300px;
+}
+
+.me-img {
+    border-radius: 12px;
+    width: 375px;
+}
+
+.img-frame {
+    position: absolute;
+    width: 375px;
+    height: 375px;
+    border: 3px solid #4392f1;
+    border-radius: 12px;
+    z-index: -1;
+    top: 700px; 
+    right: 250px;
+}
+
+/* About me section */
+
+.about-me {
+    width: 48rem;
+    margin: auto;
+    text-align: center;
+}
+
+.about-title {
+    display: flex;
+    align-items: center;
+    width: 32.25rem;
+    margin: auto;
+}
+
+.about-title h2 {
+    font-size: 2rem;
+    margin: 0 2rem;
+}
+
+.line-width {
+    background-color: #4392f1;
+    width: 150px;
+    height: 3px;
+}
+
+.about-text {
+    font-size: 1.5rem;
+    line-height: 65px;
+}
+
+/* Experience section */
+
+.experience-title {
+ display: flex;
+ align-items: center;
+}
+
+.experience-title h2 {
+    font-size: 2.5rem;
+    margin-right: 5rem;
+}
+
+.experience-title .line-width {
+    width: 250px;
+}
+
+.experience-categories {
+    display: flex;
+}
+
+.e-btn {
+    background-color: #25282C;
+    border: 0;
+    width: 200px; 
+    height: 50px;
+    margin: 0 0 2rem 0;
+    font-size: 16px;
+    color: white;
+    outline: none;
+}
+
+.e-btn:hover {
+ background-color: #4392f1;
+ color: white;
+}
+
+.experience-content {
+    margin-left: 5rem;
+}
+
+.content-title h3 {
+    color: #A8ACB3;
+    font-size: 1rem;
+    font-weight: 400;
+    margin: 0;
+}
+
+.content-title h3 span {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.sub{
+    color: #555A62;
+    text-transform: uppercase;
+    margin: 0;
+}
+
+.experience-content .line-height {
+    margin: 25px 25px 25px 0;
+    background-color: #2A2C30;
+    height: 300px;
+}
+
+.content {
+    display: flex;
+}
+
+.content-txt-1, .content-txt-2 {
+    width: 600px;
+    font-size: 1.3rem;
+    line-height: 30px;
+}
+
+/* Work Section */
+
+.work-title {
+    display: flex;
+    align-items: center;
+}
+
+.work-title h2 {
+    font-size: 2.5rem;
+    margin-right: 2.5rem;
+}
+
+.dcord-img {
+    width: 300px;
+    border-radius: 12px 12px 0 0;
+    margin: 0;
 }
 
 .card {
-  background-color: #25282C;
-  justify-content: center;
-  padding: 20px;
-  border-radius: 20px;
-  text-align: center;
+    width: 300px;
+    border-radius: 12px 12px 12px 12px;
+    background-color: #25282C;
+    height: 400px;
 }
 
-.card-img {
-  width: 275px;
-  border-radius: 20px;
-  margin-top: 20px;
+.card-txt {
+    width: 275px;
+    height: 200px;
+    margin: 20px 15px;
 }
 
-.card-icons {
-  display: flex;
-  justify-content: space-between;
-  margin: 20px 20px 5px 20px;
+.card-showcase {
+    position: relative;
 }
 
-.c-icon {
-  font-size: 30px;
-  color: #41474E;
+.dcord-img {
+    width: 250px;
 }
 
-.demo {
-  background-color: #0090d7;
-  padding: 10px;
-  border-radius: 10px;
-}
-
-.demo-txt {
-  margin: 0;
-  font-weight: 700;
-  color: white;
-}
-
-.team {
-  height: 475px;
-}
-
-.single-price {
-  height: 540px;
-}
-
-.not-found-page {
-  height: 475px;
-}
-
-.gallery {
-  height: 550px;
-}
-
-.landing-page {
-  height: 475px;
-}
-
-.about-me {
-  margin: auto;
-  text-align: center;
-  width: 700px;
-}
-
-.about-txt {
-  font-size: 1rem;
-}
-
-.csstricks {
-  text-decoration: underline;
-}
-
-/* ----------- iPhone 4 and 4S ----------- */
-@media only screen and (min-device-width: 320px) and (max-device-width: 480px) and (-webkit-min-device-pixel-ratio: 2) {
-  i {
-    font-size: 25px;
-  }
-
-  hr {
+.card-showcase:after {
+    position: absolute;
+    height: 99%;
     width: 100%;
-  }
-
-  .icons {
-    background-color: #25282C;
-    width: 64px;
-    height: 45px;
-    border-radius: 10px;
-    margin: 10px;
-    padding: 10px;
-  }
-
-  .container {
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: minmax(50px, auto);
-    margin: 100px;
-    column-gap: 0;
-    row-gap: 25px;
-    justify-content: center;
-  }
-
-  .demo {
-    background-color: #0090d7;
-    padding: 10px;
-    border-radius: 10px;
-  }
-
-  .demo-txt {
-    margin: 0;
-    font-weight: 700;
-    color: white;
-  }
-
-  .team {
-    height: auto;
-  }
-
-  .single-price {
-    height: auto;
-  }
-
-  .not-found-page {
-    height: auto;
-  }
-
-  .gallery {
-    height: auto;
-  }
-
-  .landing-page {
-    height: auto;
-  }
-
-  .about-me {
-    margin: auto;
-    text-align: center;
-    width: auto;
-  }
-
-  .about-txt {
-    font-size: 12px;
-  }
+    background-color: #4392f1;
+    opacity: 0.6;
+    top: 0;
+    left: 0;
+    display: block;
+    content: "";
+    border-radius: 12px 12px 0 0;;
 }
 
-/* ----------- iPhone 5, 5S, 5C and 5SE ----------- */
-@media only screen and (min-device-width: 320px) and (max-device-width: 568px) and (-webkit-min-device-pixel-ratio: 2) {
-  i {
-    font-size: 25px;
-  }
-
-  hr {
-    width: 100%;
-  }
-
-  .icons {
-    background-color: #25282C;
-    width: 64px;
-    height: 45px;
-    border-radius: 10px;
-    margin: 10px;
-    padding: 10px;
-  }
-
-  .container {
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: minmax(50px, auto);
-    margin: 100px;
-    column-gap: 0;
-    row-gap: 25px;
-    justify-content: center;
-  }
-
-  .demo {
-    background-color: #0090d7;
-    padding: 10px;
-    border-radius: 10px;
-  }
-
-  .demo-txt {
-    margin: 0;
-    font-weight: 700;
-    color: white;
-  }
-
-  .team {
-    height: auto;
-  }
-
-  .single-price {
-    height: auto;
-  }
-
-  .not-found-page {
-    height: auto;
-  }
-
-  .gallery {
-    height: auto;
-  }
-
-  .landing-page {
-    height: auto;
-  }
-
-  .about-me {
-    margin: auto;
-    text-align: center;
-    width: auto;
-  }
-
-  .about-txt {
-    font-size: 12px;
-  }
+.card-title {
+    position: absolute;
+    z-index: 1;
+    top: 3025px;
+    left: 350px;
+    font-size: 1.5rem;
 }
 
-/* ----------- iPhone 6, 6S, 7 and 8 ----------- */
-@media only screen and (min-device-width: 375px) and (max-device-width: 667px) and (-webkit-min-device-pixel-ratio: 2) {
-  hr {
-    width: 100%;
-  }
-
-  i {
-    font-size: 25px;
-  }
-
-  .icons {
-    background-color: #25282C;
-    width: 64px;
-    height: 45px;
-    border-radius: 10px;
-    margin: 10px;
-    padding: 10px;
-  }
-
-  .container {
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: minmax(50px, auto);
-    margin: 100px;
-    column-gap: 0;
-    row-gap: 25px;
-    justify-content: center;
-  }
-
-  .demo {
-    background-color: #0090d7;
-    padding: 10px;
-    border-radius: 10px;
-  }
-
-  .demo-txt {
-    margin: 0;
-    font-weight: 700;
-    color: white;
-  }
-
-  .team {
-    height: auto;
-  }
-
-  .single-price {
-    height: auto;
-  }
-
-  .not-found-page {
-    height: auto;
-  }
-
-  .gallery {
-    height: auto;
-  }
-
-  .landing-page {
-    height: auto;
-  }
-
-  .about-me {
-    margin: auto;
-    text-align: center;
-    width: auto;
-  }
-
-  .about-txt {
-    font-size: 12px;
-  }
+.card i {
+    font-size: 1.2rem;
+    margin: 20px 0;
 }
 
-/* ----------- iPhone 6+, 7+ and 8+ ----------- */
-@media only screen and (min-device-width: 414px) and (max-device-width: 736px) and (-webkit-min-device-pixel-ratio: 3) {
-  i {
-    font-size: 25px;
-  }
-
-  hr {
-    width: 100%;
-  }
-
-  .icons {
-    background-color: #25282C;
-    width: 64px;
-    height: 45px;
-    border-radius: 10px;
-    margin: 10px;
-    padding: 10px;
-  }
-
-  .container {
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: minmax(50px, auto);
-    margin: 100px;
-    column-gap: 0;
-    row-gap: 25px;
-    justify-content: center;
-  }
-
-  .demo {
-    background-color: #0090d7;
-    padding: 10px;
-    border-radius: 10px;
-  }
-
-  .demo-txt {
-    margin: 0;
-    font-weight: 700;
-    color: white;
-  }
-
-  .team {
-    height: auto;
-  }
-
-  .single-price {
-    height: auto;
-  }
-
-  .not-found-page {
-    height: auto;
-  }
-
-  .gallery {
-    height: auto;
-  }
-
-  .landing-page {
-    height: auto;
-  }
-
-  .about-me {
-    margin: auto;
-    text-align: center;
-    width: auto;
-  }
-
-  .about-txt {
-    font-size: 12px;
-  }
+.card .fa-github {
+    font-size: 1.4rem;
+    margin: 20px 0;
 }
 
-/* Iphone X */
-@media only screen and (min-device-width: 375px) and (min-device-height: 812px) and (-webkit-device-pixel-ratio: 3) and (orientation: portrait) {
 
-  i {
-    font-size: 50px;
-  }
-
-  hr {
-    width: 100%;
-  }
-
-  .icons {
-    background-color: #25282C;
-    width: 84px;
-    height: 65px;
-    border-radius: 10px;
-    margin: 10px;
-    padding: 10px;
-  }
-
-  .container {
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: minmax(50px, auto);
-    margin: 100px;
-    column-gap: 0;
-    row-gap: 50px;
-    justify-content: center;
-  }
-
-  .demo {
-    background-color: #0090d7;
-    padding: 10px;
-    border-radius: 10px;
-  }
-
-  .demo-txt {
-    margin: 0;
-    font-weight: 700;
-    color: white;
-  }
-
-  .team {
-    height: auto;
-  }
-
-  .single-price {
-    height: auto;
-  }
-
-  .not-found-page {
-    height: auto;
-  }
-
-  .gallery {
-    height: auto;
-  }
-
-  .landing-page {
-    height: auto;
-  }
-
-  .about-me {
-    margin: auto;
-    text-align: center;
-    width: auto;
-  }
-
-  .about-txt {
-    font-size: 1.25rem;
-  }
+.icons{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 }
 
-/* iPhone XR */
-@media only screen and (min-device-width: 414px) and (min-device-height: 896px) and (-webkit-device-pixel-ratio: 2) and (orientation: portrait) {
-  i {
-    font-size: 50px;
-  }
-
-  hr {
-    width: 100%;
-  }
-
-  .icons {
-    background-color: #25282C;
-    width: 84px;
-    height: 65px;
-    border-radius: 10px;
-    margin: 10px;
-    padding: 10px;
-  }
-
-  .container {
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: minmax(50px, auto);
-    margin: 100px;
-    column-gap: 50px;
-    row-gap: 50px;
-    justify-content: center;
-  }
-
-  .demo {
-    background-color: #0090d7;
-    padding: 10px;
-    border-radius: 10px;
-  }
-
-  .demo-txt {
-    margin: 0;
-    font-weight: 700;
-    color: white;
-  }
-
-  .team {
-    height: auto;
-  }
-
-  .single-price {
-    height: auto;
-  }
-
-  .not-found-page {
-    height: auto;
-  }
-
-  .gallery {
-    height: auto;
-  }
-
-  .landing-page {
-    height: auto;
-  }
-
-  .about-me {
-    margin: auto;
-    text-align: center;
-    width: auto;
-  }
-
-  .about-txt {
-    font-size: 1.25rem;
-  }
+.external p {
+    font-size: 1.2rem;
+    margin-right: 10px;
 }
 
-@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (-webkit-min-device-pixel-ratio: 1) {
-  i {
-    font-size: 50px;
-  }
+.external a {
+    text-decoration: none;
+   color: white;
+    margin-right: 0;
+    display: flex;
+    align-items: center;
+}
 
-  hr {
-    width: 75%;
-  }
 
-  .icons {
-    background-color: #25282C;
-    width: 84px;
-    height: 65px;
-    border-radius: 10px;
-    margin: 10px;
-    padding: 10px;
-  }
+/* Contact Section */
 
-  .container {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: minmax(50px, auto);
-    margin: 100px;
-    column-gap: 50px;
-    row-gap: 50px;
-    justify-content: center;
-  }
-
-  .demo {
-    background-color: #0090d7;
-    padding: 10px;
-    border-radius: 10px;
-  }
-
-  .demo-txt {
-    margin: 0;
-    font-weight: 700;
-    color: white;
-  }
-
-  .team {
-    height: 500px;
-  }
-
-  .single-price {
-    height: auto;
-  }
-
-  .not-found-page {
-    height: auto;
-  }
-
-  .gallery {
-    height: auto;
-  }
-
-  .landing-page {
-    height: auto;
-  }
-
-  .landing-page {
-    height: 500px
-  }
-
-  .about-me {
-    margin: auto;
+.contact {
     text-align: center;
-    width: 700px;
-  }
+}
 
-  .about-txt {
-    font-size: 1.25rem;
-  }
+.contact-title {
+    display: flex;
+    align-items: center;
+    width: 30rem;
+    margin: auto;
+}
+
+.contact-title h2 {
+    margin: 0 20px;
+    font-size: 2.5rem;
+}
+
+.contact-text h1{
+    font-weight: bold;
+}
+
+.contact-text p{
+    font-weight: bold;
+    font-size: 1.5rem;
+    width: 525px;
+    margin: auto;
+}
+
+.btn.cb {
+    margin: 25px 0;
+}
+
+.btn.s {
+    position: fixed;
+    width: 50px;
+    bottom: 25px;
+    right: 25px;
+    float: right;
+    display: none;
+    border-radius: 50px;
+}
+
+.socials {
+    position: fixed;
+    top: 350px;
+    left: 0;
+}
+
+.icon {
+    text-align: center;
+    margin: 15px;
+    width: 30px;
+    height: 30px;
+    color: white;
+    background-color: #2A2C30;
+}
+
+.icon:hover {
+    background-color: #4392f1;
+}
+
+@media only screen 
+  and (min-device-width: 375px) 
+  and (max-device-width: 812px) 
+  and (-webkit-min-device-pixel-ratio: 3) {
+    
+    body {
+        margin: 25px 0px;
+        text-align: center;
+    }
+    
+    footer {
+        height: 50px;
+        text-align: center;
+    }
+    
+    i {
+        margin-top: 7.5px;
+    }
+    
+    a {
+        color: white;
+    }
+    
+    #About-me, #Work, #Contact {
+       margin: 125px 0px;
+       padding: 75px 0; 
+    }
+    
+    #Experience {
+        margin: 125px 0 125px 0; 
+        padding: 75px 0; 
+    }
+    
+    
+    /* Header Navbar section */
+      nav a{
+          display: block;
+          margin:  0 auto;
+          text-align: center;
+      }
+    
+    .links{
+        text-decoration: none;
+        font-size: 1rem;
+        color: white;
+        margin: 25px auto;
+    
+    }
+      
+      .links:hover {
+        border-bottom: 4px solid #4392f1;
+        width: -moz-fit-content;
+    }
+    
+    .navbar {
+        display: block;
+    }
+    
+    .logo {
+        width: 200px;
+    }
+    
+    .btn {
+        width: 200px;
+    }
+    
+    /* Heading content */
+    
+    .heading-quote {
+        font-size: 1rem;
+        width: 20rem;
+    }
+    
+    .line-height {
+        margin: 0 10px 0 10px;
+        width: 3px;
+        height: 25px;
+    }
+    
+    .heading-info {
+        display: block;
+        width: 20rem;
+        text-align: center;
+    }
+    
+    .info-h {
+       margin: 50px auto;
+    }
+    
+    .heading-info h2 {
+        font-size: 1.5rem;
+    }
+    
+    .heading-info p {
+        font-size: 1rem;
+        margin: 35px 0 0 0;
+    }
+    
+    .me-img {
+        width: 200px;
+        border-radius: 100px;
+    }
+    
+    .img-frame {
+        display: none;
+    }
+    
+    /* About me section */
+    
+    .about-me {
+        width: 20rem;
+    }
+    
+    .about-title {
+        width: 20rem;
+    }
+    
+    .about-title h2 {
+        font-size: 1rem;
+        margin: 0 1.5rem;
+    }
+    
+    .line-width {
+        width: 100px;
+    }
+    
+    .about-text {
+        font-size: 0.85rem;
+        line-height: 55px;
+    }
+    
+    /* Experience section */
+    
+    .experience-title h2 {
+        font-size: 1.5rem;
+        margin: 1rem;
+    }
+    
+    .experience-title .line-width {
+        width: 175px;
+    }
+    
+    .experience-categories {
+        display: block;
+    }
+    
+    .e-btn {
+        width: 250px; 
+        height: 50px;
+        margin: 1rem auto;
+        font-size: 1rem;
+    }
+    
+      .exper-btns {
+          width: 15.94rem;
+          margin: auto;
+      }  
+      
+    .experience-content {
+        margin-left: 1rem;
+        margin-top: 25px;
+    }
+    
+    
+    .experience-content .line-height {
+        display: none;
+    }
+    
+    .content {
+        display: block;
+    }
+    
+    .content-txt-1, .content-txt-2 {
+        width: 20rem;
+        font-size: 1rem;
+        line-height: 30px;
+        margin: 0 auto;
+    }
+    
+    /* Work Section */
+    
+    .work-title {
+        display: flex;
+        align-items: center;
+    }
+    
+    .work-title h2 {
+        font-size: 1.5rem;
+        margin: 1rem;
+    }
+    
+    .card {
+        width: 300px;
+        border-radius: 12px 12px 12px 12px;
+        background-color: #25282C;
+        height: 400px;
+        margin: auto;
+    }
+    
+    
+    .dcord-img {
+        width: 300px;
+        height: 200px;
+    }
+    
+    
+    .card-title {
+        position: absolute;
+        top: 3375px;
+        left: 110px;
+    }
+    
+    
+    /* Contact Section */
+    
+    .contact-title {
+        display: flex;
+        align-items: center;
+        width: 20rem;
+        margin: auto;
+    }
+    
+    .contact-title h2 {
+        margin: 0 20px;
+        font-size: 1.5rem;
+    }
+    
+    .contact-text p{
+        font-weight: bold;
+        font-size: 1rem;
+        width: 20rem;
+        margin: auto;
+    }
+    
+    
 }
